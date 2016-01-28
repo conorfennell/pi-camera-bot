@@ -1,5 +1,8 @@
 # pi-camera-bot
 
+
+Camera used: http://www.amazon.co.uk/gp/product/B00E1GGE40?ref_=pe_385721_51767431_TE_dp_4
+
 Install node on your raspberry pi:
 
 For Raspberry Pi 2 Model B
