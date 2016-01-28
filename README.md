@@ -1,7 +1,7 @@
 # pi-camera-bot
 
 
-Camera used: http://www.amazon.co.uk/gp/product/B00E1GGE40?ref_=pe_385721_51767431_TE_dp_4
+Camera used:http://www.amazon.co.uk/gp/product/B00E1GGE40?ref_=pe_385721_51767431_TE_dp_4
 
 Install node on your raspberry pi:
 
@@ -23,7 +23,7 @@ For Raspberry Pi model A+ or B+
 
 To run pi-camera-bot:
 
-1. clone down pi-camera-bot
+1. clone down pi-camera-bot to /home/pi/
 2. cd ./pi-camera-bot
 3. npm install // Run from the command line to install any node modules referenced in the package.json
 4. Put your own bot token in the bot.js file "var BOT_TOKEN = 'your-bot-token-provided-by-botfather';"

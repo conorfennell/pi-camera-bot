@@ -24,8 +24,8 @@ bot.onText(/\/photo/, function (msg) {
 function takeAndSendPhoto(msg) {
   bot.sendChatAction(msg.chat.id, 'upload_photo').then(function() {
     console.log('take photo');
-    exec('raspistill -o /home/pi/camera-bot/a.jpg -w 1920 -vf -hf -h 1080 -q 15', function photoTaken() {
-      bot.sendPhoto(msg.chat.id, '/home/pi/camera-bot/a.jpg', {caption: 'Sweet pic'}).then(function nextPhoto() {
+    exec('raspistill -o /home/pi/pi-camera-bot/temp.jpg -w 1920 -vf -hf -h 1080 -q 15', function photoTaken() {
+      bot.sendPhoto(msg.chat.id, '/home/pi/pi-camera-bot/temp.jpg', {caption: 'Sweet pic'}).then(function nextPhoto() {
         photoQueue.pop();
         if (photoQueue.length > 0) {
           takeAndSendPhoto(photoQueue[photoQueue.length - 1]);
